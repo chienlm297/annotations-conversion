@@ -1,0 +1,6 @@
+numpy
+matplotlib
+jupyter
+nbconvert
+jupytext
+sklearn
