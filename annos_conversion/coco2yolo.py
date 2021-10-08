@@ -13,12 +13,12 @@ def convert_coordinate(size: tuple, box: List) -> tuple:
     """Convert coordinate from xywh to
         x_center, y_center, width, height
 
-    Args:
-        size (tuple): size of image
-        box (List): box coordinate
+    Arguments: \n
+    `size` (tuple): size of image \n
+    `box` (List): box coordinate \n
 
-    Returns:
-        tuple: new yolo coordinate
+    Returns:\n
+    `tuple`: new yolo coordinate
     """
     dw = 1.0 / size[0]
     dh = 1.0 / size[1]
@@ -36,10 +36,10 @@ def convert_coordinate(size: tuple, box: List) -> tuple:
 def convert(json_path: str = None, save_path: str = None, classes: List[str] = None):
     """Function to convert Coco json to yolo txt format
 
-    Args:
-        json_path (str, optional): Path to the coco json file. Defaults to None.
-        save_path (str, optional): The folder which save txt file. Defaults to None.
-        classes (List[str], optional): List name of classes. Defaults to None.
+    Arguments: \n
+    `json_path` (str, optional): Path to the coco json file. Defaults to None. \n
+    `save_path` (str, optional): The folder which save txt file. Defaults to None. \n
+    `classes` (List[str], optional): List name of classes. Defaults to None. \n
     """
     with open(json_path, "r") as f:
         data = json.load(f)
