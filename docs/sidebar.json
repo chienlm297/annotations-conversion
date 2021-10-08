@@ -1,0 +1,8 @@
+{
+  "annos_conversion": {
+    "Overview": "/",
+    "module name here": "core.html",
+    "voc2coco": "voc2coco.html",
+    "coco2yolo": "coco2yolo.html"
+  }
+}

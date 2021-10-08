@@ -54,13 +54,21 @@ def get_coco_annotation_from_obj(obj, label2id):
 def convert_xmls_to_cocojson(annotation_paths: List[str],
                             label2id: Dict[str, int],
                             output_jsonpath: str):
-    """Convert xml to coco json"""
+    """
+    Convert VOC xml files to COCO dataset JSON file
+
+    Arguments: \n
+    `annotation_paths`: (List[str]): path to xml files \n
+    `label2id` (Dict[str, int]): a dictionary to map class name to interger \n
+    `output_jsonpath` (str): name of output json file \n
+    """
     output_json_dict = {
         "images": [],
         "type": "instances",
         "annotations": [],
         "categories": []
     }
+
     bnd_id = 1
     img_id = 1
     print('Start converting !')
