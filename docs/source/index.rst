@@ -9,7 +9,11 @@ Welcome to Annotations Conversion's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
+  
+   tutorials/00_core.ipynb
+   tutorials/01_voc2coco.ipynb
+   tutorials/02_coco2yolo.ipynb
+   tutorials/index.ipynb
 
 
 Indices and tables
